@@ -1,0 +1,53 @@
+# Written by Jing Wang for IT Program Design
+# try_upick is a Unix shell script that will be used to test project 1.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_upick
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_upick
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+1
+4.8
+3
+2
+5
+1.6
+0
+20
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter product selection: 1'
+echo 'Enter product weight (lb): 4.8'
+echo 'Enter product selection: 3'
+echo 'Enter weight (lb): 2'
+echo 'Enter product selection: 5'
+echo 'Enter weight (lb): 1.6'
+echo 'Enter product selection: 0'
+echo 'Amount due ($); 15.96'
+echo 'Enter cash received ($): 20'
+echo 'Your change is $4.04'
+echo '===================================================='
+./a.out <<-EndOfInput
+2
+2.3
+4
+1.7
+0
+20
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter product selection: 2'
+echo 'Enter product weight (lb): 2.3'
+echo 'Enter product selection: 4'
+echo 'Enter weight (lb): 1.7'
+echo 'Enter product selection: 0'
+echo 'Amount due ($); 8.03'
+echo 'Enter cash received ($): 20'
+echo 'Your change is $11.97'
+echo '===================================================='
